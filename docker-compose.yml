@@ -28,7 +28,7 @@ services:
       - tyk
 
   tyk-gateway:
-    image: tykio/tyk-gateway:${GATEWAY_VERSION:-v5.9.1}
+    image: tykio/tyk-gateway-ee:${GATEWAY_VERSION:-v5.9.1}
     container_name: tyk-gateway
     ports:
       - "8080:8080"
